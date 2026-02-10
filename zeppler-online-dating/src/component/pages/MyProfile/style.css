@@ -1,0 +1,105 @@
+.my-profile-container{
+    width: 100%;
+    height: 100vh;
+    background: var(--lightblue);
+    display: flex;
+}
+.myProfile-toggle-btn2{
+    display: none;
+}
+.my-profile-sidebar{width: 17%;}
+.my-profile-content{
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.my-profile-content-box{
+    width: 100%;
+    height: calc(100% - 60px);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.my-profile-profile-box{
+    width: 30%;
+height: 350px;
+border-radius: 20px;
+overflow: hidden;
+}
+.my-profile-about-box{
+    width: 65%;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+@media screen and (max-width:1170px) {
+    .my-profile-container{
+      height: fit-content;
+      position: relative;
+    }
+    .show-myProfile-sidebar{
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s !important;
+        width: 50%;
+    }
+  .my-profile-sidebar{
+
+    width: 17%;
+      position: absolute;
+      left: -17%;
+      transition: all 0.3s !important;
+      z-index: -1;
+  }
+  
+  .my-profile-content{
+    width: 100%;
+  }
+  .my-profile-container{
+    min-height: 100vh;
+  }
+  .myProfile-toggle-btn{
+    position: absolute;
+    display: block;
+    top: 15px;
+    right: 80px;
+    transition: all 1s;
+    width:30px;
+    height: 30px;
+    border-radius: 5px;
+    background: var(--darkblue);
+    border: none;
+  }
+  .myProfile-toggle-btn2{
+    position: absolute;
+    display: block;
+    top: 15px;
+    right: 80px;
+    transition: all 1s;
+    width:30px;
+    height: 30px;
+    border-radius: 5px;
+    background: var(--darkblue);
+    border: none;
+  }
+  
+}
+@media screen and (max-width:840px) {
+    .my-profile-content-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .my-profile-profile-box{
+        width: 90%;
+        /* height: fit-content; */
+    }
+    .my-profile-about-box{
+        width: 95%;
+       
+    }
+}

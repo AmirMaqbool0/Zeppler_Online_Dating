@@ -1,0 +1,125 @@
+.matches-container{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--lightblue);
+}
+.matches-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.mat-toggle-btn2{
+    display: none;
+}
+.matches-sidebar{
+    width: 17%;
+}
+.matches-content-box{
+    width: 83%;
+}
+.matched-profiles{
+    width: 100%;
+    height: calc(100% - 60px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.matched-profiles-heading span{
+font-size: 20px;
+color: var(--black);
+font-weight: 550;
+font-family: "Inter", sans-serif;
+}
+.matched-profiles-boxs{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+     align-items: center;
+     gap: 10px;
+    row-gap: 30px;
+}
+.matched-profiles-box{
+    width: 19%;
+    height: 230px;
+}
+.loading-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* align-items: center; */
+    justify-content: center;
+
+}
+
+@media screen and (max-width:1170px) {
+    .matches-container{
+      height: fit-content;
+      position: relative;
+    }
+    .show-matches-sidebar{
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        transition: all 0.3s !important;
+        width: 50%;
+    }
+  .matches-sidebar{
+ 
+
+    width: 17%;
+      position: absolute;
+      left: -17%;
+      transition: all 0.3s !important;
+      z-index: -1;
+  }
+  
+  .matches-content-box{
+    width: 100%;
+  }
+  
+  .mat-toggle-btn{
+    position: absolute;
+    display: block;
+    top: 15px;
+    right: 80px !important;
+    transition: all 1s;
+    width:30px;
+    height: 30px;
+    border-radius: 5px;
+    background: var(--darkblue);
+    z-index: 1;
+    border: none;
+  }
+  .mat-toggle-btn2{
+    position: absolute;
+    display: block;
+    top: 15px;
+    right: 80px;
+    transition: all 1s;
+    width:30px;
+    height: 30px;
+    border-radius: 5px;
+    background: var(--darkblue);
+    border: none;
+
+  }
+}
+@media screen and (max-width:930px) {
+     .matched-profiles-box{
+    width: 30%;
+     }
+}
+@media screen and (max-width:600px) {
+    .matched-profiles-box{
+   width: 45%;
+    }
+}
+@media screen and (max-width:480px) {
+    .matched-profiles-box{
+   width: 100%;
+    }
+    
+}

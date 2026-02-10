@@ -1,0 +1,32 @@
+.termsCondition-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+}
+.terms-condition-content{
+display: flex;
+flex-direction: column;
+gap: 20px;
+width: 80%;
+}
+.terms-condition-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.terms-condition-box span{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black);
+}.terms-condition-box-text{
+    display: flex;
+    gap: 10px;
+}
+.terms-condition-box-text p{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gray);
+}

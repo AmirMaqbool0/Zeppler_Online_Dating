@@ -1,0 +1,91 @@
+.matches-container{
+    width: 100%;
+    height: 100vh;
+    background: var(--lightblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.matches-top{
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    display: flex;
+}
+.matches-top span{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black);
+}
+.matches-top-btn{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    background: var(--white);
+    height: 40px;
+    border-radius: 27px;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+
+}
+.matches-top-btn span{
+    font-size: 12px;
+    width: 90px;
+    height:90%;
+    border-radius: 27px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+.matches-users-box{
+    width: 97%;
+    height: 75%;
+    background: var(--white);
+    border-radius: 10px;
+}
+.matches-users-box{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 20px;
+}
+.matches-users-box-header{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--lightblue);
+    display: flex;
+    justify-content: space-between;
+  
+}
+.matches-users-box-header span{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+    width: 120px;
+}
+.matches-users{
+    display: flex;
+    flex-direction: column;
+    gap: 5px ;
+}
+.pagination{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 15px;
+
+}
+.pagination button{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}

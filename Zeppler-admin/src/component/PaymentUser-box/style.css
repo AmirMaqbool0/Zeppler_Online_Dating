@@ -1,0 +1,32 @@
+.payment-user-box-container{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+}
+.payment-user{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.payment-user img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.payment-user span{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--black);
+}
+.odd-background {
+    background-color: var(--white); 
+  }
+  
+  .even-background {
+    background-color: var(--lightblue);
+  }

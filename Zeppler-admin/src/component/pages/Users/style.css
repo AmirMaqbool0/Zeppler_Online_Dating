@@ -1,0 +1,107 @@
+.users-container{
+    width: 100%;
+    height: 100vh;
+    background: var(--lightblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.users-top{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.users-top span{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black);
+}
+.users-top-search {
+    width: 200px;
+    height: 40px;
+    border-radius: 27px;
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    align-items: center;
+}
+.users-top-search input{
+    width: 85%;
+    height: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.users-box{
+    width: 97%;
+    height: 70%;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.users-user-header{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--lightblue);
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+}
+.users-user-header-left{
+    width: 18%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+
+}
+.users-user-header-left span{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+}
+.users-user-header-right{
+    width: 82%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.users-user-header-right span{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+    text-align: center;
+    width: 100px;
+}
+.users-user-boxs{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.users-pagination{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    align-items: end;
+    justify-content: end;
+}
+.users-pagination button{
+   width: 30px;
+   height: 30px;
+   background: var(--white);
+   border-radius: 10px;
+   border: none;
+}
+.users-pagination button.active{
+    background: var(--yellow);
+}

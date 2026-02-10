@@ -1,0 +1,211 @@
+.faq-content-box{
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 20px;
+}
+.browser-topic{
+    width: 30%;
+    height: fit-content;
+    background: var(--white);
+    border-radius: 20px;
+}
+.browser-detail-box{
+    width: 65%;
+    height: fit-content;
+    background: var(--white);
+    border-radius: 20px;
+    padding: 15px;
+}
+.browser-topic-heading{
+    width: 100%;
+    position: relative;
+    padding-top: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-bottom: 10px;
+}
+.browser-topic-heading::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: var(--whiteblack);
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+}
+.browser-topic-heading span{ 
+ font-size: 18px;
+ font-weight: 500;
+ color: var(--black);
+ font-family: "Inter", sans-serif;
+}
+.browser-topic-links{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.browser-topic-link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+}
+.browser-topic-link span{
+    font-size: 16px;
+    font-weight: 500px;
+    color: var(--black);
+    font-family: "Inter", sans-serif;
+}
+.browser-detail-heading{
+    width: 100%;
+    padding: 10px;
+    padding-bottom:10px !important ;
+    position: relative;
+}
+.browser-detail-heading::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background: var(--whiteblack);
+    height: 2px;
+}
+.browser-detail-heading span{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+    font-family: "Inter", sans-serif;
+}
+.browser-detail-about-container{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+}
+.browser-detail-about{
+  width: 100%;
+  border: 1px solid var(--whiteblack);
+  height: 100%;
+}
+.browser-detail-about-heading{
+    width: 100%;
+    gap: 10px;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.browser-detail-about-heading::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--whiteblack);
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+   
+}
+.browser-detail-about-heading span{
+    font-size: 14px;
+    color: var(--black);
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+.browser-detail-about-text{
+    width: 100%;
+    padding: 10px;
+}
+.browser-detail-about-text p{
+    font-size: 12px;
+    color: var(--gray);
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+}
+.browser-detail-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.browser-detail-link{
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid var(--whiteblack);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+.browser-detail-link span{
+    font-size: 14px;
+    color: var(--black);
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+}
+
+@media screen and (max-width:650px) {
+    .browser-topic{
+        width: 100%;
+        height: 40px;
+        padding: 0;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        align-items: center;
+    
+    }
+    .browser-topic::-webkit-scrollbar{
+        width: 0;
+    }
+    .browser-topic-heading{
+        display: none;
+    }
+    .browser-topic-links{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center ;
+        padding: 0 !important;
+    }
+    
+    .browser-topic-heading span{ 
+        font-size: 12px;
+        
+       }
+      .browser-topic-heading{
+        padding: 10px;
+      }
+      .browser-topic-link span{
+        font-size: 10px;
+        width: 100px;
+    }
+    
+    .browser-detail-box{
+        width: 75%;
+    }
+    .faq-content-box {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 10px !important;
+       height: fit-content;
+    }
+    .browser-detail-box{
+        width: 100%;
+    }
+    .browser-detail-link span{
+        font-size: 12px;
+        color: var(--black);
+        font-weight: 600;
+        font-family: "Inter", sans-serif;
+    }
+}

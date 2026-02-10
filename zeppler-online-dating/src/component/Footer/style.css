@@ -1,0 +1,124 @@
+.footer-container {
+  width: 100%;
+  height: fit-content;
+  background: var(--darkblue);
+}
+.footer-content {
+  width: 100%;
+  padding: 70px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.footer-logo {
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+}
+.footer-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.colon1-colon2 {
+  display: flex;
+  gap: 150px;
+}
+.colon2 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.colon2 span {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  width: 270px;
+  font-family: "Inter", sans-serif;
+}
+.colon3-colon4 {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.colon3 ul,
+.colon4 ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 20px;
+}
+.colon3 ul li,
+.colon4 ul li {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  transition: all 0.5s;
+}
+.colon3 ul li:hover {
+  color: var(--whiteblack);
+  transform: translateY(1px);
+}
+.colon4 ul li:hover {
+  color: var(--whiteblack);
+  transform: translateY(1px);
+}
+.footer-line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.footer-line {
+  width: 90%;
+  height: 1px;
+  border-radius: 10px;
+  background: var(--white);
+}
+.subfooter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 70px 10px 70px;
+}
+.subfooter span {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+@media screen and (max-width: 980px) {
+  .colon1-colon2 {
+    gap: 0;
+  }
+  .footer-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .colon1-colon2 {
+    align-items: start;
+    justify-content: start;
+  }
+
+  .colon3-colon4 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .subfooter {
+    padding: 10px 40px 10px 40px;
+  }
+  .subfooter span {
+    font-size: 10px;
+  }
+}

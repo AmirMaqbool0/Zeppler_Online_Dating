@@ -1,0 +1,113 @@
+.interviews-container{
+    width: 100%;
+    height: 100vh;
+    background: var(--lightblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.interviews-heading{
+    width: 100%;
+    padding: 15px;   
+}
+.interviews-heading span{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+}
+.interviews-box{
+    width: 97%;
+    height: 73%;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 10px;
+}
+.interviews-box-top{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.interviews-box-top span{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+}
+.filters{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+.filters select{
+    width: 20%;
+    height: 40px;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.react-datepicker-wrapper{
+    width: 20% !important;
+    height: 40px !important;
+}
+.react-datepicker__input-container{
+    width: 100% !important;
+    height: 100% !important;
+}
+.react-datepicker__input-container input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    padding: 10px;
+}
+.interviews-btn button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: var(--yellow);
+    cursor: pointer;
+}
+.interview-user-boxs-header{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--lightblue);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.interview-user-header-left{
+    width: 18%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+
+}
+.interview-user-header-left span{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+}
+.interview-user-header-right{
+    width: 82%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.interview-user-header-right span{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+    text-align: center;
+    width: 100px;
+}
+.interviews-user-boxs{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
