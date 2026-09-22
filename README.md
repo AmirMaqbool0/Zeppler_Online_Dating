@@ -1,112 +1,45 @@
-# Zeppler_Online_Dating
-Zeppler Online Dating — Social Connection Platform
-4
+# Zeppler — Real-Time Dating Platform
 
-Zeppler Online Dating is a web-based social and dating platform that allows users to create profiles, discover people in their location, and communicate in real time.
-The system includes user authentication, profile management, messaging, and an admin dashboard for moderation.
+Dating platform with profile discovery, a real-time chat system built on Socket.IO, email and Google authentication, and an admin moderation panel.
 
-This project demonstrates full application flow from user registration to real-time interaction and system-level administration.
+> **Client project.** Not publicly deployed.
 
-🚀 Platform Overview
+**Case study with architecture write-up →** https://amirmaqbool.online/work/zeppler
 
-The system consists of:
+## Stack
 
-Module	Description
-🌐 User Platform	Profile creation, discovery, and messaging
-🧑‍💼 Admin Panel	User monitoring and moderation system
-🧠 Tech Stack
-💻 Frontend
+- **Frontend** — React, Redux Toolkit, TailwindCSS
+- **Backend** — Node.js, Express.js, REST APIs
+- **Database** — MongoDB, Mongoose
+- **Real-time** — Socket.IO, WebSockets
+- **Auth** — JWT, OAuth 2.0 (Google)
 
-JavaScript
+## Features
 
-React.js
+- Email and Google authentication
+- User profile discovery
+- Real-time chat system
+- Admin moderation panel
 
-Tailwind CSS
+## Architecture
 
-Redux Toolkit
+React client (Redux Toolkit) -> Express.js REST API for auth and profiles, plus a Socket.IO server for chat -> MongoDB via Mongoose. JWT is verified in both the REST middleware and the Socket.IO connection handshake.
 
-🔐 Backend / Services
+## My role
 
-Firebase Authentication (Email/Password & Google Login)
+Full-stack development: authentication flows with JWT and Google OAuth, profile discovery endpoints and UI, the Socket.IO real-time chat system, and the admin moderation panel with role-based access control.
 
-Firebase Database (User profiles & messaging data)
+## Running locally
 
-✨ Key Features
-👤 User Side
+```bash
+git clone https://github.com/AmirMaqbool0/Zeppler_Online_Dating.git
+cd Zeppler_Online_Dating
+npm install
+npm run dev
+```
 
-Email/password signup
+Requires Node.js 18+. Create a `.env` file in the project root with your own values for: `MONGO_URI, JWT_SECRET, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET`.
 
-Google login authentication
+---
 
-Profile setup (phone number, city, interests, etc.)
-
-User suggestions based on location
-
-Real-time messaging system
-
-Responsive, mobile-friendly interface
-
-💬 Communication
-
-One-to-one user messaging
-
-Dynamic chat interface
-
-Real-time data updates using Firebase
-
-🛡 Admin Panel
-
-View user profiles and information
-
-Block or restrict users
-
-Monitor user communication activity
-
-Manage platform users
-
-📁 Project Structure
-Repository	Purpose
-User Platform	Main application for users
-Admin Panel	System moderation and control
-
-Production repositories are kept private due to platform policies and user data protection.
-This version is shared for technical and portfolio demonstration purposes.
-
-🧑‍💻 My Role
-
-Frontend & Application Developer
-
-Designed and developed full UI
-
-Implemented authentication using Firebase
-
-Built profile management system
-
-Developed real-time chat feature
-
-Integrated user suggestion logic
-
-Created admin dashboard for platform control
-
-Managed global state using Redux Toolkit
-
-Ensured responsive and optimized UI
-
-🎯 Purpose of This Project
-
-This project showcases the ability to build:
-
-Authentication-based applications
-
-Real-time communication platforms
-
-User profile systems
-
-Admin moderation dashboards
-
-Scalable React application architecture
-
-📌 Notes
-
-This project is built as a functional social platform.
-Sensitive user data and backend configurations are excluded for security reasons.
+Built by [Amir Maqbool](https://amirmaqbool.online) — Full Stack Developer (React · Next.js · Node.js · MongoDB), open to relocation to Germany.
